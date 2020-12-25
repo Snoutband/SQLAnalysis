@@ -1,2 +1,2 @@
-# This Project will show what I have learned from SQL on a dataset. 
-# This project will include workarounds, for certain errors in the comments. 
+# The purpose of this project is to use SQL to analysis a dataset. 
+# This project will include workarounds, for certain errors on different branches
