@@ -1,0 +1,9 @@
+'''
+\q quit
+psql -u postgres # To login
+\c # connect to database
+\dt # list tables
+\l # view all databases 
+TABLE tablename # view contents
+\x # make command line more readable
+''' 
