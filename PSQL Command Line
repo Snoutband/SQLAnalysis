@@ -1,6 +1,6 @@
 '''
 \q quit
-psql -u postgres # To login
+psql -u postgres # if login fails, add Postgres bin to the path environment variable 
 \c # connect to database
 \dt # list tables
 \l # view all databases 
