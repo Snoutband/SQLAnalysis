@@ -26,6 +26,6 @@ Create Table Supermarket (
   WITH (FORMAT CSV, Header); 
   *\
   
-  /* If there was a column with mssing values here is the workaround 
+  /* If there was a column with mssing values here is the work around 
   
   *\
