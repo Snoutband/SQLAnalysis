@@ -1,5 +1,4 @@
 Create database project; 
-# \c project
 
 Create Table Supermarket (
   Index SERIAL, 
@@ -21,5 +20,12 @@ Create Table Supermarket (
   gross income VARCHAR(10),
   Rating NUMERIC(2,1), 
   CONSTRAINT InvoiceKey PRIMIARY KEY(Invoice_ID);
-
-
+  
+  /* Copy Supermarket
+  From 'Path'
+  WITH (FORMAT CSV, Header); 
+  *\
+  
+  /* If there was a column with mssing values here is the workaround 
+  
+  *\
