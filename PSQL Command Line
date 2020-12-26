@@ -6,4 +6,6 @@ psql -U postgres # if login fails, add Postgres bin to the path environment vari
 \l # view all databases 
 TABLE tablename # view contents
 \x # make command line more readable
+createdb # for Linux
+create database # for Windows 
 ''' 
