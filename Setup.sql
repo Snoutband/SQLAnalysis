@@ -39,11 +39,3 @@ Create Table Supermarket (
 
 	DROP TABLE SuperTemp; 
  */
-           
-            
-         
-                                    
-                         
-                                
-  
-  *\
