@@ -27,7 +27,7 @@ Create Table Supermarket (
   *\
   
  /* If there was a column with mssing values here is the work around 
-  Delete from Supermarket;
+ 	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
 	From "Supermarket CSV Path"
