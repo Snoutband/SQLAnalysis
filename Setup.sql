@@ -1,24 +1,24 @@
 Create database project; 
 
 Create Table Supermarket (
-  TableIndex BIGSERIAL, 
+  TableIndex VARCHAR(20), 
   Invoice_ID VARCHAR(12),  
-  Branch VARCHAR(1),
+  Branch VARCHAR(10),
   City TEXT, 
   Customer_type VARCHAR(6),
-  Gender VARCHAR(5),
+  Gender VARCHAR(20),
   Productline TEXT, 
   Unitprice NUMERIC(4,3),
-  Quantity INT,
+  Quantity DOUBLE PRECISION,
   "Tax5%" VARCHAR(10),
   Total VARCHAR(10),
-  Date Date, 
-  Time TIME,
+  Date VARCHAR(10), 
+  Time VARCHAR(10) 
   Payment TEXT,
-  cogs VARCHAR(10),
-  "grossmargin%" Numeric(11,11),
+  cogs Varchar(20),
+  "grossmargin%" Numeric(6,4),
   grossincome VARCHAR(10),
-  Rating NUMERIC(2,1), 
+  rating NUMERIC(2,1), 
   CONSTRAINT InvoiceKey PRIMARY KEY(Invoice_ID));
   
   /* Copy Supermarket
