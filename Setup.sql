@@ -10,16 +10,16 @@ Create Table Supermarket (
   Productline TEXT, 
   Unitprice NUMERIC(4,3),
   Quantity INT,
-  Tax5% VARCHAR(10),
+  'Tax5%' VARCHAR(10),
   Total VARCHAR(10),
   Date Date, 
   Time TIME,
   Payment TEXT,
   cogs VARCHAR(10),
-  grossmarginpercentage Numeric(11,11),
+  'grossmargin%' Numeric(11,11),
   grossincome VARCHAR(10),
   Rating NUMERIC(2,1), 
-  CONSTRAINT InvoiceKey PRIMIARY KEY(Invoice_ID);
+  CONSTRAINT InvoiceKey PRIMARY KEY(Invoice_ID);
   
   /* Copy Supermarket
   From 'Path'
