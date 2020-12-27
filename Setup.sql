@@ -1,7 +1,7 @@
 Create database project; 
 
 Create Table Supermarket (
-  Index SERIAL, 
+  Index BIGSERIAL, 
   Invoice_ID VARCHAR(12),  
   Branch VARCHAR(1),
   City TEXT, 
@@ -16,7 +16,7 @@ Create Table Supermarket (
   Time TIME,
   Payment TEXT,
   cogs VARCHAR(10),
-  gross margin percentage Numeri(11,11),
+  gross margin percentage Numeric(11,11),
   gross income VARCHAR(10),
   Rating NUMERIC(2,1), 
   CONSTRAINT InvoiceKey PRIMIARY KEY(Invoice_ID);
