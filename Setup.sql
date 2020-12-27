@@ -19,7 +19,7 @@ Create Table Supermarket (
   "grossmargin%" Numeric(11,11),
   grossincome VARCHAR(10),
   Rating NUMERIC(2,1), 
-  CONSTRAINT InvoiceKey PRIMARY KEY(Invoice_ID);
+  CONSTRAINT InvoiceKey PRIMARY KEY(Invoice_ID));
   
   /* Copy Supermarket
   From 'Path'
