@@ -6,14 +6,14 @@ Create Table Supermarket (
   Branch VARCHAR(10),
   City TEXT, 
   Customer_type VARCHAR(6),
-  Gender VARCHAR(20),
+  Gender VARCHAR(30),
   Productline TEXT, 
   Unitprice NUMERIC(4,3),
   Quantity DOUBLE PRECISION,
   "Tax5%" VARCHAR(10),
   Total VARCHAR(10),
   Date VARCHAR(10), 
-  Time VARCHAR(10) 
+  Time VARCHAR(30) 
   Payment TEXT,
   cogs Varchar(20),
   "grossmargin%" Numeric(6,4),
