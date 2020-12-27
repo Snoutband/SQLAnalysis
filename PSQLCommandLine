@@ -1,4 +1,3 @@
-/*
 \q quit
 psql -U postgres # if login fails, add Postgres bin to the path environment variable 
 \c # connect to database
@@ -8,4 +7,3 @@ TABLE tablename # view contents
 \x # make command line more readable
 createdb # for Linux
 create database # for Windows 
-*\
