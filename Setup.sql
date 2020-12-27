@@ -26,6 +26,24 @@ Create Table Supermarket (
   WITH (FORMAT CSV, Header); 
   *\
   
-  /* If there was a column with mssing values here is the work around 
+ /* If there was a column with mssing values here is the work around 
+  Delete from Supermarket;
+
+	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
+	From "Supermarket CSV Path"
+	With (FORMAT CSV, HEADER);
+
+	INSERT INTO Supermarket ("list of columns")
+	SELECT value1, value2 ... 'value for empty column' 
+	FROM SuperTemp; 
+
+	DROP TABLE SuperTemp; 
+ */
+           
+            
+         
+                                    
+                         
+                                
   
   *\
