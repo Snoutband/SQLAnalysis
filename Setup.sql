@@ -34,7 +34,7 @@ Create Table Supermarket (
 	With (FORMAT CSV, HEADER);
 
 	INSERT INTO Supermarket ("list of columns")
-	SELECT value1, value2 ... 'value for empty column' 
+	SELECT column1, column2 ... 'value for empty column in order' 
 	FROM SuperTemp; 
 
 	DROP TABLE SuperTemp; 
