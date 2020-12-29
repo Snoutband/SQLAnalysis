@@ -1,7 +1,7 @@
 Create database project; 
 
 Create Table Supermarket (
-  TableIndex VARCHAR(20), 
+  TableIndex SERIAL, 
   Invoice_ID VARCHAR(12),  
   Branch VARCHAR(10),
   City TEXT, 
@@ -19,7 +19,7 @@ Create Table Supermarket (
   "grossmargin%" Numeric(6,4),
   grossincome VARCHAR(10),
   rating NUMERIC(2,1), 
-  CONSTRAINT InvoiceKey PRIMARY KEY(Invoice_ID));
+  CONSTRAINT PrimeKey PRIMARY KEY(TableIndex));
   
   /* Copy Supermarket
   From 'Path'
