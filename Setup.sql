@@ -1,7 +1,7 @@
 Create database project; 
 
 Create Table Supermarket (
-  TableIndex SERIAL, 
+  TableIndex VARCHAR(30), 
   Invoice_ID VARCHAR(12),  
   Branch VARCHAR(10),
   City TEXT, 
