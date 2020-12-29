@@ -18,7 +18,7 @@ Create Table Supermarket (
   cogs Varchar(20),
   "grossmargin%" Numeric(6,4),
   grossincome VARCHAR(10),
-  rating TEXT DEFAULT 'rating', 
+  rating TEXT, 
   CONSTRAINT PrimeKey PRIMARY KEY(TableIndex));
   
   /* Copy Supermarket
@@ -26,7 +26,7 @@ Create Table Supermarket (
   WITH (FORMAT CSV, Header); 
   *\
   
- /* Here is the workaround for missing values after creating the table  
+ /* Here is the workaround to get values into rating, I would recommend dropping the column 
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
