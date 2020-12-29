@@ -26,7 +26,7 @@ Create Table Supermarket (
   WITH (FORMAT CSV, Header); 
   *\
   
- /* Here is the workaround to get values into rating, I would recommend dropping the rating column.
+ /* Here is the workaround to get values into rating. An alternative solution is to drop the rating column. 
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
