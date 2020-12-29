@@ -26,15 +26,15 @@ Create Table Supermarket (
   WITH (FORMAT CSV, Header); 
   *\
   
- /* Here is the workaround to get values into rating, I would recommend dropping the column 
+ /* Here is the workaround to get values into rating, I would recommend dropping the rating column.
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
 	From "Supermarket CSV Path"
 	With (FORMAT CSV, HEADER);
 
-	INSERT INTO Supermarket ("list of columns")
-	SELECT column1, column2 ... 'value for empty column in order' 
+	INSERT INTO Supermarket (TableIndex, Invoice_ID, Branch, City, Customer_type, Gender, Productline, Unitprice, Quantity, "Tax5%", Total, Date, Time, Payment, cogs, "grossmargin%", grossincome, rating)
+	SELECT TableIndex, Invoice_ID, Branch, City, Customer_type, Gender, Productline, Unitprice, Quantity, "Tax5%", Total, Date, Time, Payment, cogs, "grossmargin%", grossincome, 'ratingvalue'
 	FROM SuperTemp; 
 
 	DROP TABLE SuperTemp; 
