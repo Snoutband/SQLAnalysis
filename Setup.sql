@@ -8,17 +8,17 @@ Create Table Supermarket (
   Customer_type VARCHAR(6),
   Gender VARCHAR(30),
   Productline TEXT, 
-  Unitprice NUMERIC(4,3),
+  Unitprice Varchar(10),
   Quantity DOUBLE PRECISION,
   "Tax5%" VARCHAR(10),
   Total VARCHAR(10),
   Date VARCHAR(10), 
-  Time VARCHAR(30) 
+  Time VARCHAR(30),
   Payment TEXT,
   cogs Varchar(20),
   "grossmargin%" Numeric(6,4),
   grossincome VARCHAR(10),
-  rating NUMERIC(2,1), 
+  rating TEXT DEFAULT 'rating', 
   CONSTRAINT PrimeKey PRIMARY KEY(TableIndex));
   
   /* Copy Supermarket
@@ -26,7 +26,7 @@ Create Table Supermarket (
   WITH (FORMAT CSV, Header); 
   *\
   
- /* If there was a column with mssing values here is the work around 
+ /* Here is the workaround for missing values after creating the table  
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
