@@ -1,7 +1,6 @@
 Create database project; 
 
 Create Table Supermarket (
-  TableIndex VARCHAR(30), 
   Invoice_ID VARCHAR(12),  
   Branch VARCHAR(10),
   City TEXT, 
@@ -12,21 +11,24 @@ Create Table Supermarket (
   Quantity DOUBLE PRECISION,
   "Tax5%" VARCHAR(10),
   Total VARCHAR(10),
-  Date VARCHAR(10), 
-  Time VARCHAR(30),
+  Date Date, 
+  Time Time,
   Payment TEXT,
   cogs Varchar(20),
   "grossmargin%" Numeric(6,4),
   grossincome VARCHAR(10),
   rating TEXT, 
-  CONSTRAINT PrimeKey PRIMARY KEY(TableIndex));
+  CONSTRAINT PrimeKey PRIMARY KEY(Invoice_ID));
+
+  Alter Table Supermarket Add Column TableIndex BIGSERIAL 
   
-  /* Copy Supermarket
-  From 'Path'
-  WITH (FORMAT CSV, Header); 
+  /* \copy Supermarket(Invoice_ID, Branch, City, Customer_type, gender, Productline, Unitprice, Quantity, "Tax5%", Total, Date, Time, Payment, cogs, "grossmargin%", Grossincome, rating) From 'C:\Users\Profilename\Desktop\T.csv' WITH (FORMAT CSV, HEADER);  
+  Be sure to specifiy the columns or Postgres will insert values into the wrong columns. 
+  On the command line use \copy instead of Copy
+  Big Serial should auto populate 				  
   *\
   
- /* Here is the workaround to get values into rating. An alternative solution is to drop the rating column. 
+ /* Here is the workaround to get values into a missing with missing data.  
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
