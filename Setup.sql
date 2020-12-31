@@ -20,7 +20,7 @@ Create Table Supermarket (
   rating TEXT, 
   CONSTRAINT PrimeKey PRIMARY KEY(Invoice_ID));
 
-  Alter Table Supermarket Add Column TableIndex BIGSERIAL 
+  Alter Table Supermarket Add Column TableIndex BIGSERIAL; 
   
   /* 
 \copy Supermarket(Invoice_ID, Branch, City, Customer_type, gender, Productline, Unitprice, Quantity, "Tax5%", Total, Date, Time, Payment, cogs, "grossmargin%", Grossincome, rating) From 'C:\Users\Profilename\Desktop\filename.csv' WITH (FORMAT CSV, HEADER);  
