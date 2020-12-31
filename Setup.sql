@@ -22,13 +22,14 @@ Create Table Supermarket (
 
   Alter Table Supermarket Add Column TableIndex BIGSERIAL 
   
-  /* \copy Supermarket(Invoice_ID, Branch, City, Customer_type, gender, Productline, Unitprice, Quantity, "Tax5%", Total, Date, Time, Payment, cogs, "grossmargin%", Grossincome, rating) From 'C:\Users\Profilename\Desktop\T.csv' WITH (FORMAT CSV, HEADER);  
+  /* 
+\copy Supermarket(Invoice_ID, Branch, City, Customer_type, gender, Productline, Unitprice, Quantity, "Tax5%", Total, Date, Time, Payment, cogs, "grossmargin%", Grossincome, rating) From 'C:\Users\Profilename\Desktop\filename.csv' WITH (FORMAT CSV, HEADER);  
   Be sure to specifiy the columns or Postgres will insert values into the wrong columns. 
   On the command line use \copy instead of Copy
   Big Serial should auto populate 				  
   *\
   
- /* Here is the workaround to get values into a missing with missing data.  
+ /* Here is the workaround to get a text value into a column with missing data, assume rating had no data   
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
