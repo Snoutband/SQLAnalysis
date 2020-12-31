@@ -29,7 +29,7 @@ Create Table Supermarket (
   Big Serial should auto populate 				  
   *\
   
- /* Here is the workaround to get a text value into a column with missing data, assume rating had no data   
+ /* Here is the workaround to get a text value into a column with missing data, assume rating has no data   
  	Delete from Supermarket;
 
 	CREATE TEMPORARY TABLE SuperTemp (Like Supermarket);
